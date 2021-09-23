@@ -13,6 +13,7 @@ public class Inorder {
     public static void InorderPrint(Node root){
         if(root ==null){
             return ;
+            //dwd
         }
         InorderPrint(root.left);
         System.out.println(root.data);
