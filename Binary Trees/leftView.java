@@ -7,6 +7,7 @@ public class leftView {
         Node(int data){
             this.data=data;
             left=right=null;
+            //node constructor
         }
 
     }
