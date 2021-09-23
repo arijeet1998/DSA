@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class PostOrder {
     static class Node{
         int data;
@@ -20,6 +22,28 @@ public class PostOrder {
     }
     
     public static void PostOrderIter(Node root){
+        Stack<Node> stack=new Stack<>();
+        Stack<Integer> output=new Stack<>();
+        stack.push(root);
+        while(!stack.isEmpty()){
+            //pop the element from the stack and push it into the output stack
+            Node curr=stack.pop();
+            output.push(curr.data);
+
+            //if theres left child push it into the stack
+            if(curr.left!=null){
+                stack.push(curr.left);
+            }
+            //if theres right child push that into the stack
+            if(curr.right!=null){
+                stack.push(curr.right);
+            }
+        }
+        //finally pop the output stack one by one printing them
+        while(!output.isEmpty()){
+            int rem=output.pop();
+            System.out.println(rem);        
+        }
         
     }
     public static void main(String[] args) {
@@ -34,6 +58,6 @@ public class PostOrder {
         //       /    \
         //      4      34 
 
-        PostOrderRec(root);
+        PostOrderIter(root);
     }
 }
