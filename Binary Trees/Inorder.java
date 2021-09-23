@@ -26,11 +26,12 @@ public class Inorder {
         root.right=new Node(3);
         root.left.left=new Node(4);
         root.right.right=new Node(34);
+        root.left.right=new Node(6);
         //          1
         //         / \
         //        2  3
-        //       /    \
-        //      4      34 
+        //       /\    \
+        //      4  6    34
 
         InorderPrint(root);
 
