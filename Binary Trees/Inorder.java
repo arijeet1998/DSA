@@ -1,6 +1,6 @@
 public class Inorder {
     static class Node{
-        
+        // Inorder 
         int data;
         Node left,right;
 
