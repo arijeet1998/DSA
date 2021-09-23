@@ -30,7 +30,7 @@ public class PostOrder {
             Node curr=stack.pop();
             output.push(curr.data);
 
-            //if theres left child push it into the stack
+            //if theres left child push it into the stacks
             if(curr.left!=null){
                 stack.push(curr.left);
             }
