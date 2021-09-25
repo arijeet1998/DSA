@@ -36,7 +36,7 @@ public class verticalTraversal {
         if(root==null){
             return;
         }
-        //if(hd==line no then we should print the value)
+        //if(hd==line no then print the value)
         if(hd==line_no){
             System.out.print(root.data+"\t");
         }

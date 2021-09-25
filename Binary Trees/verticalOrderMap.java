@@ -58,6 +58,12 @@ public class verticalOrderMap {
             }
         }
         System.out.println(hm);
+        List<Integer>  al= new ArrayList<>();
+        for(int key: hm.keySet()){
+            int val= hm.get(key).get(0);
+            al.add(val);
+        }
+        System.out.println("Top Order traversal "+al);
 
     }
 
@@ -70,6 +76,8 @@ public class verticalOrderMap {
         node.left.right.left=new Node(4);
         node.left.right.right=new Node(5);
         node.left.right.right.left=new Node(8);
+        node.right.right=new Node(10);
+        node.right.right.right=new Node(20);
 
         // Values val= new Values();// values to get the max and min values in a single code only thus static class created
 
