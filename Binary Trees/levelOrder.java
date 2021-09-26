@@ -30,9 +30,10 @@ class BinaryTree {
         if(root == null){
             return 0;// youb can't use if(root.left == null || root.right==null return 1, because we are not mentioning what will happen if the node goes to null)
         }
-        int hleft=getHeight(root.left);
-        int hright=getHeight(root.right);
+        int hleft=getHeight(root.left);//get the left height
+        int hright=getHeight(root.right);// get the right height
 
+        // take the height which has higher length
         if(hleft>hright){
             return hleft+1;
         }else{
