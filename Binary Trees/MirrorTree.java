@@ -24,10 +24,10 @@ public class MirrorTree{
         if(root==null){
             return null;
         }
-        Node newNode= new Node(root.data);//Here I have created a new Tree which is mirror image of the previous tree
-        newNode.left=mirrorify(root.right);
-        newNode.right=mirrorify(root.left);
-        return newNode;
+        Node newNode= new Node(root.data);// create a new Tree which is mirror image of the previous tree
+        newNode.left=mirrorify(root.right);//left pointer points to the right node
+        newNode.right=mirrorify(root.left);//right pointer points to the left node
+        return newNode;//return the root ultimately (postorder)
     }
 
     public static void main(String[] args) {
