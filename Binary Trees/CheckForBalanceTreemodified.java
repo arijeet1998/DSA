@@ -13,7 +13,7 @@ class Node
 		left = right = null;		
 	}
 } */
-//here since it is modified it is in O(1)
+//here since it is modified it is in O(n)
 class Tree
 {
     
