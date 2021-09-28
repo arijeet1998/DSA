@@ -15,6 +15,7 @@ public class DiagonalView {
         }
     }
 
+    //O(nLogn)
     public static void diagonalPrint(Node root,int d,TreeMap<Integer, List<Integer>> tm){
 
         //return null  if root is null
